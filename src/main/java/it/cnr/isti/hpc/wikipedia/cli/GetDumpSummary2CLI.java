@@ -91,7 +91,7 @@ public class GetDumpSummary2CLI extends AbstractCommandLineInterface {
 				int length2 = sb2.length() - 1;
 				if (length2 >= 0)
 					sb2.setLength(length2);
-				cli.writeInOutput(sb2.toString() + " " + a.getCleanText());
+				cli.writeInOutput(sb2.toString() + " " + a.getCleanText().replace("\n", ""));
 			}
 			cli.writeInOutput("\n");
 
