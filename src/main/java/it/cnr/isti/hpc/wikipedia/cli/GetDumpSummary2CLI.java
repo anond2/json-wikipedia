@@ -77,7 +77,7 @@ public class GetDumpSummary2CLI extends AbstractCommandLineInterface {
 			cli.writeInOutput(TAB);
 			cli.writeInOutput("http://ja.wikipedia.org/wiki/" + a.getTitleInWikistyle());
 			cli.writeInOutput(TAB);
-			cli.writeInOutput(a.getWikiTitle());
+			cli.writeInOutput(a.getTitle());
 			cli.writeInOutput(TAB);
 			if (a.isRedirect()) {
 				cli.writeInOutput("-> " + a.getRedirect());
